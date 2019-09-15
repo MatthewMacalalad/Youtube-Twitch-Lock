@@ -3,8 +3,12 @@ var input;
 var setTime = 0;
 var msTime = 0;
 
+var url1 = "youtube.com";
+var url2 = "twitch.tv";
+
+
 function checkLoop() {
-	if (window.location.href.indexOf("youtube.com") > -1 || window.location.href.indexOf("twitch.tv") > -1) {
+	if (window.location.href.indexOf(url1) > -1 || window.location.href.indexOf(url2) > -1) {
 		var a = confirm("Now is not the time!\n[Hit ok to close window, cancel to ignore]");
 		if (a == true) {
 			window.close();
